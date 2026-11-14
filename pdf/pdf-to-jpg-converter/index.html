@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PDF to JPG Converter – Free Online PDF to Image Tool</title>
+<meta name="description" content="Convert PDF pages to high-quality JPG images with our free PDF to JPG converter. Fast, secure, and no software installation required.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/png-to-webp.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+    <script src="/js/header.js"></script>
+
+    <!-- Include PDF.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+<script>
+    // Set worker path for PDF.js
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js';
+</script>
+<script src="/js/chat.js"></script>
+    <script src="/pdf-js/jpg.js"></script>
+    <script src="/js/include.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PDF to JPG Converter",
+      "url": "https://convertimage.us/pdf/pdf-to-jpg-converter/",
+      "description": "Convert PDF documents to JPG images online for free, perfect for easy sharing and web use.",
+      "applicationCategory": "FileConverter",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+</script>
+
+    >
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a  class="logo" href="index.html"><img src="/images/logo.png" alt="Herbert West Landscaping Logo"    width="100" height="100">
+            </a>
+            
+            <nav>
+                <ul>
+                  <li><a href="/index.html" class="active">Home</a></li>
+                  <li><a href="/about-us/">About Us</a></li>
+                  
+                  <!-- Dropdown starts here -->
+
+                <li>
+                    
+                  <a href="/bmp/">Convert BMP</a>
+                    <ul>
+                      <li><a href="/bmp/bmp-to-ico-converter/"> BMP to ICO</a></li>
+                      <li><a href="/bmp/bmp-to-jpg-converter/"> BMP to JPG</a></li>
+                      <li><a href="/bmp/bmp-to-pdf-converter/"> BMP to PDF</a></li>
+                      <li><a href="/bmp/bmp-to-tiff-converter/"> BMPto TIFF</a></li>
+                      <li><a href="/bmp/bmp-to-png-converter/"> BMP to PNG</a></li>
+                      <li><a href="/bmp/bmp-to-webp-converter/"> BMP to WEBP</a></li>
+                     
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="/png/">Convert PNG</a>
+                    <ul>
+                      <li><a href="/png/png-to-jpg-converter/"> PNG to JPG</a></li>
+                      <li><a href="/png/png-to-webp-converter/"> PNG to WEBP</a></li>
+                      <li><a href="/png/png-to-bmp-converter/"> PNG to BMP</a></li>
+                      <li><a href="/png/png-to-tiff-converter/"> PNG to TIFF</a></li>
+                      <li><a href="/png/png-to-pdf-converter/"> PNG to PDF</a></li>
+                      <li><a href="/png/png-to-ico-converter/"> PNG to ICO</a></li>
+                     
+                    </ul>
+                  </li>
+                
+                  <li><a href="/jpg/">Convert JPG</a>
+                    <ul>
+                        <li><a href="/jpg/jpg-to-png-converter/"> JPG to PNG</a></li>
+                        <li><a href="/jpg/jpg-to-webp-converter/"> JPG to WEBP</a></li>
+                        <li><a href="/jpg/jpg-to-bmp-converter/"> JPG to BMP</a></li>
+                        <li><a href="/jpg/jpg-to-tiff-converter/"> JPG to TIFF</a></li>
+                        <li><a href="/jpg/jpg-to-pdf-converter/"> JPG to PDF</a></li>
+                        <li><a href="/jpg/jpg-to-ico-converter/"> JPG to ICO</a></li>
+                       
+                      </ul>
+                </li>
+                  <li><a href="/webp/">Convert WEBP</a>
+                    <ul>
+                        <li><a href="/webp/webp-to-jpg-converter/"> WEBP to JPG</a></li>
+                        <li><a href="/webp/webp-to-png-converter/"> WEBP to PNG</a></li>
+                        <li><a href="/webp/webp-to-bmp-converter/"> WEBP to BMP</a></li>
+                        <li><a href="/webp/webp-to-tiff-converter/"> WEBP to TIFF</a></li>
+                        <li><a href="/webp/webp-to-pdf-converter/"> WEBP to PDF</a></li>
+                        <li><a href="/webp/webp-to-ico-converter/"> WEBP to ICO</a></li>
+                       
+                      </ul>
+                </li>
+                  <li><a href="/tiff/">Convert TIFF</a>
+                    <ul>
+                        <li><a href="/tiff/tiff-to-jpg-converter/"> TIFF to JPG</a></li>
+                        <li><a href="/tiff/tiff-to-webp-converter/"> TIFF to WEBP</a></li>
+                        <li><a href="/tiff/tiff-to-bmp-converter/"> TIFF to BMP</a></li>
+                        <li><a href="/tiff/tiff-to-png-converter/"> TIFF to PNG</a></li>
+                        <li><a href="/tiff/tiff-to-pdf-converter/"> TIFF to PDF</a></li>
+                        <li><a href="/tiff/tiff-to-ico-converter/"> TIFF to ICO</a></li>
+                       
+                      </ul>
+                </li>
+                  <li><a href="/pdf/">Convert PDF</a>
+                    <ul>
+                        <li><a href="/pdf/pdf-to-jpg-converter/"> PDF to JPG</a></li>
+                        <li><a href="/pdf/pdf-to-webp-converter/"> PDF to WEBP</a></li>
+                        <li><a href="/pdf/pdf-to-bmp-converter/"> PDF to BMP</a></li>
+                        <li><a href="/pdf/pdf-to-tiff-converter/"> PDF to TIFF</a></li>
+                        <li><a href="/pdf/pdf-to-png-converter/"> PDF to PNG</a></li>
+                        <li><a href="/pdf/pdf-to-ico-converter/"> PDF to ICO</a></li>
+                       
+                      </ul>
+                </li>
+                  <li><a href="/ico/">Convert ICO</a>
+                    <ul>
+                        <li><a href="/ico/ico-to-jpg-converter/"> ICO to JPG</a></li>
+                        <li><a href="/ico/ico-to-webp-converter/"> ICO to WEBP</a></li>
+                        <li><a href="/ico/ico-to-bmp-converter/"> ICO to BMP</a></li>
+                        <li><a href="/ico/ico-to-tiff-converter/"> ICO to TIFF</a></li>
+                        <li><a href="/ico/ico-to-pdf-converter/"> ICO to PDF</a></li>
+                        <li><a href="/ico/ico-to-png-converter/"> ICO to PNG</a></li>
+                       
+                      </ul>
+                      <!-- Dropdown ends -->
+            
+                    </li>
+                    <li><a href="/contact/">Contact</a>
+            
+                     
+                </li>
+                </ul>
+              </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="image-converter" class="converter-section">
+            <div class="container">
+                <h1>PNG to JPG</h1>
+                <h2>PNG to JPG now</h2>
+                
+                <p class="subtitle">Convert PNG to JPG format</p>
+        
+                <div class="converter-container">
+            <div class="drop-area" id="drop-area">
+                <i class="fas fa-file-pdf"></i>
+                <p>Drag & drop your PDF files here or click to browse</p>
+                <input type="file" id="file-input" accept=".pdf,application/pdf" multiple>
+            </div>
+            
+            <div class="settings">
+                <div class="form-group">
+                    <label for="jpg-quality">JPG Quality</label>
+                    <input type="range" id="jpg-quality" min="1" max="100" value="85">
+                    <span id="quality-value">85%</span>
+                </div>
+                <div class="form-group">
+                    <label for="jpg-resolution">Resolution (DPI)</label>
+                    <select id="jpg-resolution">
+                        <option value="72">72 DPI (Web)</option>
+                        <option value="150" selected>150 DPI (Good)</option>
+                        <option value="300">300 DPI (High Quality)</option>
+                        <option value="600">600 DPI (Ultra Quality)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="convert-all-pages">Convert All Pages</label>
+                    <input type="checkbox" id="convert-all-pages" checked>
+                </div>
+            </div>
+            
+            <button id="convert-btn" class="btn primary">
+                <i class="fas fa-exchange-alt"></i> Convert to JPG
+            </button>
+        </div>
+        
+        <div class="file-list" id="file-list"></div>
+    </div>
+</div>
+        </section>
+
+       <section class="how-to-convert">
+    <div class="container">
+        <h2>How to Convert PDF to JPG</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Upload Your PDF</h3>
+                    <p>Add your PDF file by dragging it into the converter or browsing your device.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Select JPG Output</h3>
+                    <p>Choose JPG to convert your PDF into a widely compatible image format.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Export Your JPG</h3>
+                    <p>Click convert and download your new JPG file immediately.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Why Choose Our PDF to JPG Converter?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Data Privacy</h3>
+                <p>Your PDF files are processed locally, keeping your data safe and secure.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Efficient Conversion</h3>
+                <p>Convert PDF to JPG quickly while maintaining good image quality.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Device Support</h3>
+                <p>Works seamlessly across all devices with no software installation needed.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-images"></i>
+                <h3>Batch Processing</h3>
+                <p>Convert multiple PDF pages to JPG in one streamlined batch.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="supported-formats">
+    <div class="container">
+        <h2>Why Convert PDF to JPG?</h2>
+        <div class="formats-grid">
+            <div class="format-card">
+                <h3>PDF</h3>
+                <p>A versatile document format, ideal for sharing and archiving with fixed formatting.</p>
+            </div>
+            <div class="format-card">
+                <h3>JPG</h3>
+                <p>A compressed image format, widely used for photos and online sharing.</p>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I convert a multi-page PDF to multiple JPG files?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, each page of your PDF can be converted to a separate JPG file in one batch.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Will JPG retain the quality of my PDF?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>JPG uses lossy compression, so there may be slight quality reduction compared to your PDF.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What’s the maximum PDF file size I can convert?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The converter supports PDF files up to 20MB for efficient JPG conversion.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is JPG better for online sharing than PDF?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, JPG’s smaller file size makes it more suitable for online sharing than PDF.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Does this PDF to JPG converter require registration?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, this converter is free to use with no registration needed.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <p>Still have questions? <a href="contact.html">Contact our support team</a> for assistance.</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+    <div class="modal" id="conversion-modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Conversion in Progress</h3>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="conversion-progress"></div>
+            </div>
+            <span id="progress-text">0%</span>
+        </div>
+        <p class="status-message">Please wait while we process your files...</p>
+        <div class="download-section" id="download-section"></div>
+    </div>
+</div>
+
+
+<script>
+           includeHTML('/includes/footer.html', 'main');
+         </script>
+
+    
+</body>
+</html>

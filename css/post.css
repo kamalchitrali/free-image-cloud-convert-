@@ -1,0 +1,292 @@
+.blog-post {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.post-content p {
+  line-height: 1.8;
+  margin-bottom: 1.5em;
+  font-size: 1.1rem;
+}
+
+.post-content h2 {
+  font-size: 1.75rem;
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+  color: #2c5282;
+}
+
+
+.author-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.author-header {
+    display: flex;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.author-avatar {
+    flex: 0 0 200px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.author-avatar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: var(--box-shadow);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: white;
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.author-info {
+    flex: 1;
+}
+
+.author-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+}
+
+.author-info h2 {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+.author-info p {
+    margin: 0 0 25px 0;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.contact-btn {
+    background: white;
+    color: var(--primary);
+    border: none;
+    padding: 12px 25px;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-btn:hover {
+    background: var(--light);
+    transform: translateY(-2px);
+}
+
+.author-content {
+    padding: 40px;
+}
+
+.skills-section h3, .articles-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--secondary);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.skills-section h3::after, .articles-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.skill-card {
+    background: var(--light);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.skill-card i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.skill-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.skill-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.article-card {
+    border-bottom: 1px solid #eee;
+    padding: 25px 0;
+}
+
+.article-card:last-child {
+    border-bottom: none;
+}
+
+.article-meta {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.article-meta .date {
+    margin-right: 15px;
+}
+
+.article-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.article-card p {
+    margin: 0 0 15px 0;
+    color: #555;
+}
+
+.read-more {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.read-more:hover {
+    color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+    .author-header {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .author-avatar {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* General styling for unordered and ordered lists */
+.post-content ul,
+.post-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Style each list item */
+.post-content ul li,
+.post-content ol li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+/* Custom bullet for UL */
+.post-content ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Numbered list has browser default styling, just spacing */
+.post-content ol li {
+  list-style-type: decimal;
+}
+
+/* Optional: Hover effect on list items */
+.post-content li:hover {
+  color: #2c3e50;
+  transition: color 0.2s ease;
+}
+
+
